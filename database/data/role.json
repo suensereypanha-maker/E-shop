@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Super Admin",
+    "slug": "admin",
+    "description": "Full control over system, POS, catalog, users, and store settings."
+  },
+  {
+    "name": "Store Manager",
+    "slug": "manager",
+    "description": "Manage products, stock levels, suppliers, and sales analytics."
+  },
+  {
+    "name": "POS Cashier",
+    "slug": "cashier",
+    "description": "Operate POS cashier desk, process customer checkouts and cash shift drawer."
+  },
+  {
+    "name": "Customer",
+    "slug": "user",
+    "description": "Registered online shoppers, order history, and account profile."
+  }
+]

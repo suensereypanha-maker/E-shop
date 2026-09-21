@@ -1,0 +1,1910 @@
+[
+    {
+        "name": "Dashboard",
+        "icon": "bi-grid-1x2-fill",
+        "sort": 1,
+        "route": "dashboard",
+        "badge": null,
+        "children": [],
+        "translations": {
+            "en": {
+                "name": "Dashboard"
+            },
+            "kh": {
+                "name": "ផ្ទាំងគ្រប់គ្រង"
+            },
+            "zh": {
+                "name": "仪表盘"
+            }
+        }
+    },
+    {
+        "name": "POS",
+        "icon": "bi-calculator",
+        "sort": 2,
+        "route": null,
+        "badge": "POS",
+        "children": [
+            {
+                "name": "New Sale",
+                "icon": "bi-plus-circle",
+                "sort": 1,
+                "route": "#pos-new-sale",
+                "badge": "Sale",
+                "translations": {
+                    "en": {
+                        "name": "New Sale"
+                    },
+                    "kh": {
+                        "name": "ការលក់ថ្មី"
+                    },
+                    "zh": {
+                        "name": "新建销售"
+                    }
+                }
+            },
+            {
+                "name": "Sales History",
+                "icon": "bi-clock-history",
+                "sort": 2,
+                "route": "#pos-sales-history",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Sales History"
+                    },
+                    "kh": {
+                        "name": "ប្រវត្តិការលក់"
+                    },
+                    "zh": {
+                        "name": "销售历史"
+                    }
+                }
+            },
+            {
+                "name": "Returns",
+                "icon": "bi-arrow-counterclockwise",
+                "sort": 3,
+                "route": "#pos-returns",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Returns"
+                    },
+                    "kh": {
+                        "name": "ការប្តូរ/សងទំនិញ"
+                    },
+                    "zh": {
+                        "name": "退换货"
+                    }
+                }
+            },
+            {
+                "name": "Cashier Shift",
+                "icon": "bi-person-badge",
+                "sort": 4,
+                "route": "#pos-cashier-shift",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Cashier Shift"
+                    },
+                    "kh": {
+                        "name": "វេនអ្នកគិតលុយ"
+                    },
+                    "zh": {
+                        "name": "收银班次"
+                    }
+                }
+            },
+            {
+                "name": "Open Store",
+                "icon": "bi-door-open",
+                "sort": 5,
+                "route": "#pos-open-store",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Open Store"
+                    },
+                    "kh": {
+                        "name": "បើកហាង"
+                    },
+                    "zh": {
+                        "name": "开店"
+                    }
+                }
+            },
+            {
+                "name": "Close Store",
+                "icon": "bi-door-closed",
+                "sort": 6,
+                "route": "#pos-close-store",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Close Store"
+                    },
+                    "kh": {
+                        "name": "បិទហាង"
+                    },
+                    "zh": {
+                        "name": "关店"
+                    }
+                }
+            },
+            {
+                "name": "Cash In",
+                "icon": "bi-box-arrow-in-down",
+                "sort": 7,
+                "route": "#pos-cash-in",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Cash In"
+                    },
+                    "kh": {
+                        "name": "លុយចូល"
+                    },
+                    "zh": {
+                        "name": "现金存入"
+                    }
+                }
+            },
+            {
+                "name": "Cash Out",
+                "icon": "bi-box-arrow-up-right",
+                "sort": 8,
+                "route": "#pos-cash-out",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Cash Out"
+                    },
+                    "kh": {
+                        "name": "លុយចេញ"
+                    },
+                    "zh": {
+                        "name": "现金取出"
+                    }
+                }
+            },
+            {
+                "name": "Deposit",
+                "icon": "bi-safe",
+                "sort": 9,
+                "route": "#pos-deposit",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Deposit"
+                    },
+                    "kh": {
+                        "name": "ប្រាក់កក់"
+                    },
+                    "zh": {
+                        "name": "押金/定金"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "POS"
+            },
+            "kh": {
+                "name": "ប្រព័ន្ធលក់ (POS)"
+            },
+            "zh": {
+                "name": "收银系统 (POS)"
+            }
+        }
+    },
+    {
+        "name": "Orders",
+        "icon": "bi-bag-check",
+        "sort": 3,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Orders",
+                "icon": "bi-list-ul",
+                "sort": 1,
+                "route": "#orders-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Orders"
+                    },
+                    "kh": {
+                        "name": "ការបញ្ជាទិញទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部订单"
+                    }
+                }
+            },
+            {
+                "name": "Online Orders",
+                "icon": "bi-globe",
+                "sort": 2,
+                "route": "#orders-online",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Online Orders"
+                    },
+                    "kh": {
+                        "name": "ការបញ្ជាទិញអនឡាញ"
+                    },
+                    "zh": {
+                        "name": "线上订单"
+                    }
+                }
+            },
+            {
+                "name": "Indoor Orders",
+                "icon": "bi-shop-window",
+                "sort": 3,
+                "route": "#orders-indoor",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Indoor Orders"
+                    },
+                    "kh": {
+                        "name": "ការបញ្ជាទិញក្នុងហាង"
+                    },
+                    "zh": {
+                        "name": "堂食/店内订单"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Orders"
+            },
+            "kh": {
+                "name": "ការបញ្ជាទិញ"
+            },
+            "zh": {
+                "name": "订单管理"
+            }
+        }
+    },
+    {
+        "name": "Quotations",
+        "icon": "bi-file-earmark-text",
+        "sort": 4,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Quotations",
+                "icon": "bi-files",
+                "sort": 1,
+                "route": "#quotations-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Quotations"
+                    },
+                    "kh": {
+                        "name": "សម្រង់តម្លៃទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部报价单"
+                    }
+                }
+            },
+            {
+                "name": "New Quotation",
+                "icon": "bi-file-earmark-plus",
+                "sort": 2,
+                "route": "#quotations-new",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "New Quotation"
+                    },
+                    "kh": {
+                        "name": "បង្កើតសម្រង់តម្លៃ"
+                    },
+                    "zh": {
+                        "name": "新建报价"
+                    }
+                }
+            },
+            {
+                "name": "Pending",
+                "icon": "bi-hourglass-split",
+                "sort": 3,
+                "route": "#quotations-pending",
+                "badge": "Pending",
+                "translations": {
+                    "en": {
+                        "name": "Pending"
+                    },
+                    "kh": {
+                        "name": "កំពុងរង់ចាំ"
+                    },
+                    "zh": {
+                        "name": "待审核"
+                    }
+                }
+            },
+            {
+                "name": "Approved",
+                "icon": "bi-check2-circle",
+                "sort": 4,
+                "route": "#quotations-approved",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Approved"
+                    },
+                    "kh": {
+                        "name": "បានអនុម័ត"
+                    },
+                    "zh": {
+                        "name": "已批准"
+                    }
+                }
+            },
+            {
+                "name": "Rejected",
+                "icon": "bi-x-circle",
+                "sort": 5,
+                "route": "#quotations-rejected",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Rejected"
+                    },
+                    "kh": {
+                        "name": "បានបដិសេធ"
+                    },
+                    "zh": {
+                        "name": "已拒绝"
+                    }
+                }
+            },
+            {
+                "name": "Convert to Sale",
+                "icon": "bi-arrow-right-circle",
+                "sort": 6,
+                "route": "#quotations-convert",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Convert to Sale"
+                    },
+                    "kh": {
+                        "name": "បំប្លែងទៅជាការលក់"
+                    },
+                    "zh": {
+                        "name": "转为销售"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Quotations"
+            },
+            "kh": {
+                "name": "តារាងសម្រង់តម្លៃ"
+            },
+            "zh": {
+                "name": "报价单"
+            }
+        }
+    },
+    {
+        "name": "Products",
+        "icon": "bi-box-seam",
+        "sort": 5,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Products",
+                "icon": "bi-boxes",
+                "sort": 1,
+                "route": "frontend.products",
+                "badge": "Catalog",
+                "translations": {
+                    "en": {
+                        "name": "All Products"
+                    },
+                    "kh": {
+                        "name": "ផលិតផលទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部商品"
+                    }
+                }
+            },
+            {
+                "name": "Add Product",
+                "icon": "bi-plus-square",
+                "sort": 2,
+                "route": "#products-add",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Add Product"
+                    },
+                    "kh": {
+                        "name": "បន្ថែមផលិតផល"
+                    },
+                    "zh": {
+                        "name": "添加商品"
+                    }
+                }
+            },
+            {
+                "name": "Categories",
+                "icon": "bi-tags",
+                "sort": 3,
+                "route": "backend.categories.index",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Categories"
+                    },
+                    "kh": {
+                        "name": "ប្រភេទផលិតផល"
+                    },
+                    "zh": {
+                        "name": "商品分类"
+                    }
+                }
+            },
+            {
+                "name": "Brands",
+                "icon": "bi-patch-check",
+                "sort": 4,
+                "route": "backend.brands.index",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Brands"
+                    },
+                    "kh": {
+                        "name": "ម៉ាកយីហោ"
+                    },
+                    "zh": {
+                        "name": "品牌管理"
+                    }
+                }
+            },
+            {
+                "name": "Colors",
+                "icon": "bi-palette",
+                "sort": 5,
+                "route": "backend.colors.index",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Colors"
+                    },
+                    "kh": {
+                        "name": "ពណ៌"
+                    },
+                    "zh": {
+                        "name": "颜色管理"
+                    }
+                }
+            },
+            {
+                "name": "Sizes",
+                "icon": "bi-aspect-ratio",
+                "sort": 6,
+                "route": "backend.size.index",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Sizes"
+                    },
+                    "kh": {
+                        "name": "ទំហំ"
+                    },
+                    "zh": {
+                        "name": "尺码管理"
+                    }
+                }
+            },
+            {
+                "name": "Bundles",
+                "icon": "bi-collection",
+                "sort": 7,
+                "route": "#products-bundles",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Bundles"
+                    },
+                    "kh": {
+                        "name": "កញ្ចប់ទំនិញ"
+                    },
+                    "zh": {
+                        "name": "组合套餐"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Products"
+            },
+            "kh": {
+                "name": "ផលិតផល"
+            },
+            "zh": {
+                "name": "商品管理"
+            }
+        }
+    },
+    {
+        "name": "Inventory",
+        "icon": "bi-clipboard-data",
+        "sort": 6,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "Stock",
+                "icon": "bi-stack",
+                "sort": 1,
+                "route": "#inventory-stock",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Stock"
+                    },
+                    "kh": {
+                        "name": "ស្តុកទំនិញ"
+                    },
+                    "zh": {
+                        "name": "当前库存"
+                    }
+                }
+            },
+            {
+                "name": "Stock In",
+                "icon": "bi-box-arrow-in-down-left",
+                "sort": 2,
+                "route": "#inventory-stock-in",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Stock In"
+                    },
+                    "kh": {
+                        "name": "នាំចូលស្តុក"
+                    },
+                    "zh": {
+                        "name": "入库管理"
+                    }
+                }
+            },
+            {
+                "name": "Stock Out",
+                "icon": "bi-box-arrow-up-right",
+                "sort": 3,
+                "route": "#inventory-stock-out",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Stock Out"
+                    },
+                    "kh": {
+                        "name": "នាំចេញស្តុក"
+                    },
+                    "zh": {
+                        "name": "出库管理"
+                    }
+                }
+            },
+            {
+                "name": "Transfer",
+                "icon": "bi-arrow-left-right",
+                "sort": 4,
+                "route": "#inventory-transfer",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Transfer"
+                    },
+                    "kh": {
+                        "name": "ផ្ទេរស្តុក"
+                    },
+                    "zh": {
+                        "name": "库存调拨"
+                    }
+                }
+            },
+            {
+                "name": "Adjustments",
+                "icon": "bi-sliders2",
+                "sort": 5,
+                "route": "#inventory-adjustments",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Adjustments"
+                    },
+                    "kh": {
+                        "name": "ការកែសម្រួលស្តុក"
+                    },
+                    "zh": {
+                        "name": "盘点调整"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Inventory"
+            },
+            "kh": {
+                "name": "សារពើភ័ណ្ឌ"
+            },
+            "zh": {
+                "name": "库存管理"
+            }
+        }
+    },
+    {
+        "name": "Purchases",
+        "icon": "bi-cart-plus",
+        "sort": 7,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "Purchases",
+                "icon": "bi-cart-check",
+                "sort": 1,
+                "route": "#purchases-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Purchases"
+                    },
+                    "kh": {
+                        "name": "ការទិញចូល"
+                    },
+                    "zh": {
+                        "name": "采购单"
+                    }
+                }
+            },
+            {
+                "name": "Suppliers",
+                "icon": "bi-truck",
+                "sort": 2,
+                "route": "backend.suppliers.index",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Suppliers"
+                    },
+                    "kh": {
+                        "name": "អ្នកផ្គត់ផ្គង់"
+                    },
+                    "zh": {
+                        "name": "供应商"
+                    }
+                }
+            },
+            {
+                "name": "Purchase Returns",
+                "icon": "bi-arrow-return-left",
+                "sort": 3,
+                "route": "#purchases-returns",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Purchase Returns"
+                    },
+                    "kh": {
+                        "name": "សងទំនិញទៅអ្នកផ្គត់ផ្គង់"
+                    },
+                    "zh": {
+                        "name": "采购退货"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Purchases"
+            },
+            "kh": {
+                "name": "ការទិញចូល"
+            },
+            "zh": {
+                "name": "采购管理"
+            }
+        }
+    },
+    {
+        "name": "Customers",
+        "icon": "bi-people",
+        "sort": 8,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Customers",
+                "icon": "bi-people-fill",
+                "sort": 1,
+                "route": "#customers-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Customers"
+                    },
+                    "kh": {
+                        "name": "អតិថិជនទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部客户"
+                    }
+                }
+            },
+            {
+                "name": "Registered Customers",
+                "icon": "bi-person-check",
+                "sort": 2,
+                "route": "backend.registered-customers.index",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Registered Customers"
+                    },
+                    "kh": {
+                        "name": "អតិថិជនបានចុះឈ្មោះ"
+                    },
+                    "zh": {
+                        "name": "注册客户"
+                    }
+                }
+            },
+            {
+                "name": "Wholesale Customers",
+                "icon": "bi-building",
+                "sort": 3,
+                "route": "#customers-wholesale",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Wholesale Customers"
+                    },
+                    "kh": {
+                        "name": "អតិថិជនបោះដុំ"
+                    },
+                    "zh": {
+                        "name": "批发客户"
+                    }
+                }
+            },
+            {
+                "name": "Customer Groups",
+                "icon": "bi-diagram-3",
+                "sort": 4,
+                "route": "#customers-groups",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Customer Groups"
+                    },
+                    "kh": {
+                        "name": "ក្រុមអតិថិជន"
+                    },
+                    "zh": {
+                        "name": "客户群组"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Customers"
+            },
+            "kh": {
+                "name": "អតិថិជន"
+            },
+            "zh": {
+                "name": "客户管理"
+            }
+        }
+    },
+    {
+        "name": "Promotions",
+        "icon": "bi-megaphone",
+        "sort": 9,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "Discounts",
+                "icon": "bi-percent",
+                "sort": 1,
+                "route": "#promotions-discounts",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Discounts"
+                    },
+                    "kh": {
+                        "name": "ការបញ្ចុះតម្លៃ"
+                    },
+                    "zh": {
+                        "name": "折扣优惠"
+                    }
+                }
+            },
+            {
+                "name": "Coupons",
+                "icon": "bi-ticket-perforated",
+                "sort": 2,
+                "route": "#promotions-coupons",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Coupons"
+                    },
+                    "kh": {
+                        "name": "គូប៉ុង"
+                    },
+                    "zh": {
+                        "name": "优惠券"
+                    }
+                }
+            },
+            {
+                "name": "Campaigns",
+                "icon": "bi-bullseye",
+                "sort": 3,
+                "route": "#promotions-campaigns",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Campaigns"
+                    },
+                    "kh": {
+                        "name": "យុទ្ធនាការ"
+                    },
+                    "zh": {
+                        "name": "营销活动"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Promotions"
+            },
+            "kh": {
+                "name": "ការផ្សព្វផ្សាយ"
+            },
+            "zh": {
+                "name": "促销推广"
+            }
+        }
+    },
+    {
+        "name": "Shipping",
+        "icon": "bi-truck",
+        "sort": 10,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "Deliveries",
+                "icon": "bi-send-check",
+                "sort": 1,
+                "route": "#shipping-deliveries",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Deliveries"
+                    },
+                    "kh": {
+                        "name": "បញ្ជីដឹកជញ្ជូន"
+                    },
+                    "zh": {
+                        "name": "发货单"
+                    }
+                }
+            },
+            {
+                "name": "Shipping Providers",
+                "icon": "bi-compass",
+                "sort": 2,
+                "route": "#shipping-providers",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Shipping Providers"
+                    },
+                    "kh": {
+                        "name": "ក្រុមហ៊ុនដឹកជញ្ជូន"
+                    },
+                    "zh": {
+                        "name": "物流承运商"
+                    }
+                }
+            },
+            {
+                "name": "Shipping Fees",
+                "icon": "bi-cash-stack",
+                "sort": 3,
+                "route": "#shipping-fees",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Shipping Fees"
+                    },
+                    "kh": {
+                        "name": "ថ្លៃដឹកជញ្ជូន"
+                    },
+                    "zh": {
+                        "name": "运费模板"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Shipping"
+            },
+            "kh": {
+                "name": "ការដឹកជញ្ជូន"
+            },
+            "zh": {
+                "name": "物流配送"
+            }
+        }
+    },
+    {
+        "name": "Payments",
+        "icon": "bi-credit-card",
+        "sort": 11,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Payments",
+                "icon": "bi-wallet2",
+                "sort": 1,
+                "route": "#payments-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Payments"
+                    },
+                    "kh": {
+                        "name": "ការទូទាត់ទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部支付"
+                    }
+                }
+            },
+            {
+                "name": "Cash",
+                "icon": "bi-cash",
+                "sort": 2,
+                "route": "#payments-cash",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Cash"
+                    },
+                    "kh": {
+                        "name": "សាច់ប្រាក់"
+                    },
+                    "zh": {
+                        "name": "现金支付"
+                    }
+                }
+            },
+            {
+                "name": "Bank Transfer",
+                "icon": "bi-bank",
+                "sort": 3,
+                "route": "#payments-bank",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Bank Transfer"
+                    },
+                    "kh": {
+                        "name": "ផ្ទេរប្រាក់តាមធនាគារ"
+                    },
+                    "zh": {
+                        "name": "银行转账"
+                    }
+                }
+            },
+            {
+                "name": "QR Payment",
+                "icon": "bi-qr-code-scan",
+                "sort": 4,
+                "route": "#payments-qr",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "QR Payment"
+                    },
+                    "kh": {
+                        "name": "ទូទាត់តាម QR"
+                    },
+                    "zh": {
+                        "name": "二维码支付"
+                    }
+                }
+            },
+            {
+                "name": "Online Payment",
+                "icon": "bi-credit-card-2-front",
+                "sort": 5,
+                "route": "#payments-online",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Online Payment"
+                    },
+                    "kh": {
+                        "name": "ទូទាត់តាមអនឡាញ"
+                    },
+                    "zh": {
+                        "name": "在线支付"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Payments"
+            },
+            "kh": {
+                "name": "ការទូទាត់"
+            },
+            "zh": {
+                "name": "支付结算"
+            }
+        }
+    },
+    {
+        "name": "Expenses",
+        "icon": "bi-receipt",
+        "sort": 12,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Expenses",
+                "icon": "bi-card-checklist",
+                "sort": 1,
+                "route": "#expenses-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Expenses"
+                    },
+                    "kh": {
+                        "name": "ចំណាយទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部支出"
+                    }
+                }
+            },
+            {
+                "name": "Add Expense",
+                "icon": "bi-plus-circle-dotted",
+                "sort": 2,
+                "route": "#expenses-add",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Add Expense"
+                    },
+                    "kh": {
+                        "name": "បន្ថែមចំណាយ"
+                    },
+                    "zh": {
+                        "name": "记录支出"
+                    }
+                }
+            },
+            {
+                "name": "Expense Categories",
+                "icon": "bi-bookmark-check",
+                "sort": 3,
+                "route": "#expenses-categories",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Expense Categories"
+                    },
+                    "kh": {
+                        "name": "ប្រភេទចំណាយ"
+                    },
+                    "zh": {
+                        "name": "支出类别"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Expenses"
+            },
+            "kh": {
+                "name": "ចំណាយ"
+            },
+            "zh": {
+                "name": "支出管理"
+            }
+        }
+    },
+    {
+        "name": "Employees",
+        "icon": "bi-person-badge",
+        "sort": 13,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Employees",
+                "icon": "bi-people",
+                "sort": 1,
+                "route": "#employees-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Employees"
+                    },
+                    "kh": {
+                        "name": "បុគ្គលិកទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部员工"
+                    }
+                }
+            },
+            {
+                "name": "Cashiers",
+                "icon": "bi-calculator-fill",
+                "sort": 2,
+                "route": "#employees-cashiers",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Cashiers"
+                    },
+                    "kh": {
+                        "name": "បេឡាករ"
+                    },
+                    "zh": {
+                        "name": "收银人员"
+                    }
+                }
+            },
+            {
+                "name": "Sales Staff",
+                "icon": "bi-person-lines-fill",
+                "sort": 3,
+                "route": "#employees-sales",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Sales Staff"
+                    },
+                    "kh": {
+                        "name": "បុគ្គលិកផ្នែកលក់"
+                    },
+                    "zh": {
+                        "name": "销售人员"
+                    }
+                }
+            },
+            {
+                "name": "Warehouse Staff",
+                "icon": "bi-boxes",
+                "sort": 4,
+                "route": "#employees-warehouse",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Warehouse Staff"
+                    },
+                    "kh": {
+                        "name": "បុគ្គលិកឃ្លាំង"
+                    },
+                    "zh": {
+                        "name": "仓库人员"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Employees"
+            },
+            "kh": {
+                "name": "បុគ្គលិក"
+            },
+            "zh": {
+                "name": "员工管理"
+            }
+        }
+    },
+    {
+        "name": "Stores",
+        "icon": "bi-shop",
+        "sort": 14,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Stores",
+                "icon": "bi-buildings",
+                "sort": 1,
+                "route": "#stores-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Stores"
+                    },
+                    "kh": {
+                        "name": "សាខាទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部门店"
+                    }
+                }
+            },
+            {
+                "name": "Open Store",
+                "icon": "bi-door-open-fill",
+                "sort": 2,
+                "route": "#stores-open",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Open Store"
+                    },
+                    "kh": {
+                        "name": "បើកហាង"
+                    },
+                    "zh": {
+                        "name": "开启门店"
+                    }
+                }
+            },
+            {
+                "name": "Close Store",
+                "icon": "bi-door-closed-fill",
+                "sort": 3,
+                "route": "#stores-close",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Close Store"
+                    },
+                    "kh": {
+                        "name": "បិទហាង"
+                    },
+                    "zh": {
+                        "name": "关闭门店"
+                    }
+                }
+            },
+            {
+                "name": "Store Stock",
+                "icon": "bi-box-seam-fill",
+                "sort": 4,
+                "route": "#stores-stock",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Store Stock"
+                    },
+                    "kh": {
+                        "name": "ស្តុកតាមសាខា"
+                    },
+                    "zh": {
+                        "name": "门店库存"
+                    }
+                }
+            },
+            {
+                "name": "Store Transfers",
+                "icon": "bi-arrow-left-right",
+                "sort": 5,
+                "route": "#stores-transfers",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Store Transfers"
+                    },
+                    "kh": {
+                        "name": "ផ្ទេររវាងសាខា"
+                    },
+                    "zh": {
+                        "name": "门店调拨"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Stores"
+            },
+            "kh": {
+                "name": "សាខាហាង"
+            },
+            "zh": {
+                "name": "门店管理"
+            }
+        }
+    },
+    {
+        "name": "Reviews",
+        "icon": "bi-star-half",
+        "sort": 15,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "All Reviews",
+                "icon": "bi-chat-square-quote",
+                "sort": 1,
+                "route": "#reviews-all",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "All Reviews"
+                    },
+                    "kh": {
+                        "name": "ការវាយតម្លៃទាំងអស់"
+                    },
+                    "zh": {
+                        "name": "全部评价"
+                    }
+                }
+            },
+            {
+                "name": "Pending Reviews",
+                "icon": "bi-hourglass-split",
+                "sort": 2,
+                "route": "#reviews-pending",
+                "badge": "Pending",
+                "translations": {
+                    "en": {
+                        "name": "Pending Reviews"
+                    },
+                    "kh": {
+                        "name": "ការវាយតម្លៃរង់ចាំ"
+                    },
+                    "zh": {
+                        "name": "待审核评价"
+                    }
+                }
+            },
+            {
+                "name": "Approved Reviews",
+                "icon": "bi-check-circle",
+                "sort": 3,
+                "route": "#reviews-approved",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Approved Reviews"
+                    },
+                    "kh": {
+                        "name": "ការវាយតម្លៃអនុម័ត"
+                    },
+                    "zh": {
+                        "name": "已通过评价"
+                    }
+                }
+            },
+            {
+                "name": "Rejected Reviews",
+                "icon": "bi-x-circle",
+                "sort": 4,
+                "route": "#reviews-rejected",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Rejected Reviews"
+                    },
+                    "kh": {
+                        "name": "ការវាយតម្លៃបដិសេធ"
+                    },
+                    "zh": {
+                        "name": "已拒绝评价"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Reviews"
+            },
+            "kh": {
+                "name": "ការវាយតម្លៃ"
+            },
+            "zh": {
+                "name": "评价管理"
+            }
+        }
+    },
+    {
+        "name": "Reports",
+        "icon": "bi-graph-up-arrow",
+        "sort": 16,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "Sales",
+                "icon": "bi-bar-chart-line",
+                "sort": 1,
+                "route": "#reports-sales",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Sales"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍លក់"
+                    },
+                    "zh": {
+                        "name": "销售报表"
+                    }
+                }
+            },
+            {
+                "name": "Profit",
+                "icon": "bi-cash-coin",
+                "sort": 2,
+                "route": "#reports-profit",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Profit"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍ប្រាក់ចំណេញ"
+                    },
+                    "zh": {
+                        "name": "利润报表"
+                    }
+                }
+            },
+            {
+                "name": "Inventory",
+                "icon": "bi-boxes",
+                "sort": 3,
+                "route": "#reports-inventory",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Inventory"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍ស្តុក"
+                    },
+                    "zh": {
+                        "name": "库存报表"
+                    }
+                }
+            },
+            {
+                "name": "Purchases",
+                "icon": "bi-cart-check",
+                "sort": 4,
+                "route": "#reports-purchases",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Purchases"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍ទិញចូល"
+                    },
+                    "zh": {
+                        "name": "采购报表"
+                    }
+                }
+            },
+            {
+                "name": "Customers",
+                "icon": "bi-people",
+                "sort": 5,
+                "route": "#reports-customers",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Customers"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍អតិថិជន"
+                    },
+                    "zh": {
+                        "name": "客户报表"
+                    }
+                }
+            },
+            {
+                "name": "Expenses",
+                "icon": "bi-receipt-cutoff",
+                "sort": 6,
+                "route": "#reports-expenses",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Expenses"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍ចំណាយ"
+                    },
+                    "zh": {
+                        "name": "支出报表"
+                    }
+                }
+            },
+            {
+                "name": "Payments",
+                "icon": "bi-credit-card",
+                "sort": 7,
+                "route": "#reports-payments",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Payments"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍ទូទាត់"
+                    },
+                    "zh": {
+                        "name": "支付报表"
+                    }
+                }
+            },
+            {
+                "name": "Financial",
+                "icon": "bi-pie-chart",
+                "sort": 8,
+                "route": "#reports-financial",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Financial"
+                    },
+                    "kh": {
+                        "name": "របាយការណ៍ហិរញ្ញវត្ថុ"
+                    },
+                    "zh": {
+                        "name": "财务综合报表"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Reports"
+            },
+            "kh": {
+                "name": "របាយការណ៍"
+            },
+            "zh": {
+                "name": "数据报表"
+            }
+        }
+    },
+    {
+        "name": "Online Store",
+        "icon": "bi-globe2",
+        "sort": 17,
+        "route": null,
+        "badge": "Live",
+        "children": [
+            {
+                "name": "Homepage",
+                "icon": "bi-house-door",
+                "sort": 1,
+                "route": "home",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Homepage"
+                    },
+                    "kh": {
+                        "name": "ទំព័រដើម"
+                    },
+                    "zh": {
+                        "name": "商城首页"
+                    }
+                }
+            },
+            {
+                "name": "Banners",
+                "icon": "bi-image",
+                "sort": 2,
+                "route": "#online-banners",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Banners"
+                    },
+                    "kh": {
+                        "name": "បដាពាណិជ្ជកម្ម"
+                    },
+                    "zh": {
+                        "name": "横幅轮播"
+                    }
+                }
+            },
+            {
+                "name": "Featured Products",
+                "icon": "bi-star",
+                "sort": 3,
+                "route": "#online-featured",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Featured Products"
+                    },
+                    "kh": {
+                        "name": "ផលិតផលលេចធ្លោ"
+                    },
+                    "zh": {
+                        "name": "精选推荐"
+                    }
+                }
+            },
+            {
+                "name": "New Arrivals",
+                "icon": "bi-sparkles",
+                "sort": 4,
+                "route": "#online-new-arrivals",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "New Arrivals"
+                    },
+                    "kh": {
+                        "name": "ផលិតផលទើបមកដល់"
+                    },
+                    "zh": {
+                        "name": "新品上市"
+                    }
+                }
+            },
+            {
+                "name": "Pages",
+                "icon": "bi-layout-text-window-reverse",
+                "sort": 5,
+                "route": "#online-pages",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Pages"
+                    },
+                    "kh": {
+                        "name": "ទំព័រព័ត៌មាន"
+                    },
+                    "zh": {
+                        "name": "静态页面"
+                    }
+                }
+            },
+            {
+                "name": "Reviews",
+                "icon": "bi-chat-left-dots",
+                "sort": 6,
+                "route": "#online-reviews",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Reviews"
+                    },
+                    "kh": {
+                        "name": "ការវាយតម្លៃអនឡាញ"
+                    },
+                    "zh": {
+                        "name": "商城评价"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Online Store"
+            },
+            "kh": {
+                "name": "ហាងអនឡាញ"
+            },
+            "zh": {
+                "name": "线上商城"
+            }
+        }
+    },
+    {
+        "name": "Notifications",
+        "icon": "bi-bell",
+        "sort": 18,
+        "route": "#notifications",
+        "badge": "3",
+        "children": [],
+        "translations": {
+            "en": {
+                "name": "Notifications"
+            },
+            "kh": {
+                "name": "ការជូនដំណឹង"
+            },
+            "zh": {
+                "name": "系统通知"
+            }
+        }
+    },
+    {
+        "name": "Settings",
+        "icon": "bi-gear",
+        "sort": 19,
+        "route": null,
+        "badge": null,
+        "children": [
+            {
+                "name": "General",
+                "icon": "bi-sliders",
+                "sort": 1,
+                "route": "#settings-general",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "General"
+                    },
+                    "kh": {
+                        "name": "ការកំណត់ទូទៅ"
+                    },
+                    "zh": {
+                        "name": "通用设置"
+                    }
+                }
+            },
+            {
+                "name": "Payment",
+                "icon": "bi-credit-card",
+                "sort": 2,
+                "route": "#settings-payment",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Payment"
+                    },
+                    "kh": {
+                        "name": "ការកំណត់ការទូទាត់"
+                    },
+                    "zh": {
+                        "name": "支付设置"
+                    }
+                }
+            },
+            {
+                "name": "Shipping",
+                "icon": "bi-truck",
+                "sort": 3,
+                "route": "#settings-shipping",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Shipping"
+                    },
+                    "kh": {
+                        "name": "ការកំណត់ការដឹកជញ្ជូន"
+                    },
+                    "zh": {
+                        "name": "配送设置"
+                    }
+                }
+            },
+            {
+                "name": "Tax",
+                "icon": "bi-receipt",
+                "sort": 4,
+                "route": "#settings-tax",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Tax"
+                    },
+                    "kh": {
+                        "name": "ពន្ធដារ"
+                    },
+                    "zh": {
+                        "name": "税费设置"
+                    }
+                }
+            },
+            {
+                "name": "Users",
+                "icon": "bi-person-gear",
+                "sort": 5,
+                "route": "#settings-users",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "Users"
+                    },
+                    "kh": {
+                        "name": "អ្នកប្រើប្រាស់"
+                    },
+                    "zh": {
+                        "name": "用户管理"
+                    }
+                }
+            },
+            {
+                "name": "Roles",
+                "icon": "bi-shield-lock",
+                "sort": 6,
+                "route": "#roles-permissions-section",
+                "badge": "Config",
+                "translations": {
+                    "en": {
+                        "name": "Roles"
+                    },
+                    "kh": {
+                        "name": "តួនាទី និងសិទ្ធិ"
+                    },
+                    "zh": {
+                        "name": "角色与权限"
+                    }
+                }
+            },
+            {
+                "name": "System",
+                "icon": "bi-cpu",
+                "sort": 7,
+                "route": "#settings-system",
+                "badge": null,
+                "translations": {
+                    "en": {
+                        "name": "System"
+                    },
+                    "kh": {
+                        "name": "ប្រព័ន្ធ"
+                    },
+                    "zh": {
+                        "name": "系统信息"
+                    }
+                }
+            }
+        ],
+        "translations": {
+            "en": {
+                "name": "Settings"
+            },
+            "kh": {
+                "name": "ការកំណត់"
+            },
+            "zh": {
+                "name": "系统设置"
+            }
+        }
+    }
+]
