@@ -118,6 +118,29 @@
           }
       }">
 
+    <!-- Global Floating Toast Notification -->
+    @if (session('success') || session('error'))
+        <div x-data="{ show: true }"
+             x-show="show"
+             x-init="setTimeout(() => show = false, 4000)"
+             x-transition:enter="transition ease-out duration-300 transform"
+             x-transition:enter-start="opacity-0 translate-y-[-12px]"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-200 transform"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 translate-y-[-12px]"
+             class="fixed top-5 right-5 z-[9999] max-w-sm w-full p-3.5 rounded-xl shadow-xl border flex items-center justify-between gap-3 backdrop-blur-md {{ session('error') ? 'bg-rose-50/95 border-rose-200 text-rose-800' : 'bg-emerald-50/95 border-emerald-200 text-emerald-800' }}"
+             style="display: none;">
+            <div class="flex items-center gap-2.5">
+                <i class="bi {{ session('error') ? 'bi-exclamation-circle-fill text-rose-600' : 'bi-check-circle-fill text-emerald-600' }} text-base"></i>
+                <span class="text-xs font-semibold">{{ session('success') ?? session('error') }}</span>
+            </div>
+            <button type="button" @click="show = false" class="text-slate-400 hover:text-slate-600">
+                <i class="bi bi-x-lg text-xs"></i>
+            </button>
+        </div>
+    @endif
+
     <div class="flex h-screen overflow-hidden bg-slate-50">
 
         <!-- Mobile Sidebar Overlay -->

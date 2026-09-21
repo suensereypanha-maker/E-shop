@@ -128,7 +128,7 @@
         @endif
 
         <!-- DataTable Card -->
-        <div class="rounded-xl bg-white border border-slate-200 p-6 shadow-xs">
+        <div class="">
             <div class="table-responsive">
                 {!! $dataTable->table(['class' => 'display', 'style' => 'width:100%']) !!}
             </div>

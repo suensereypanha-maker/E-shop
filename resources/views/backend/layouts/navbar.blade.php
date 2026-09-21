@@ -28,7 +28,7 @@
     <!-- Right: Quick Actions & Profile -->
     <div class="flex items-center gap-2.5 sm:gap-3">
         <!-- Quick POS New Sale Button -->
-        <a href="#pos-new-sale"
+        {{-- <a href="#pos-new-sale"
            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-sm transition-all">
             <i class="bi bi-plus-circle text-xs"></i>
             <span>New Sale</span>
@@ -39,12 +39,12 @@
            class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-xs font-medium shadow-2xs transition-colors">
             <i class="bi bi-box-arrow-in-down text-emerald-600 text-xs"></i>
             <span>Cash In</span>
-        </a>
+        </a> --}}
 
         <!-- Notifications with Badge 3 -->
         <div class="relative" x-data="{ open: false }">
             <button @click="open = !open"
-                    class="relative p-2 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-600 hover:text-slate-900 transition-colors shadow-2xs">
+                    class="relative p-2   hover:bg-slate-50 text-slate-600 hover:text-slate-900 transition-colors shadow-2xs">
                 <i class="bi bi-bell text-sm"></i>
                 <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center ring-2 ring-white">
                     3
@@ -139,15 +139,17 @@
                     </a>
                 @endif
 
-                <a href="{{ route('backend.menu.json') }}" target="_blank" class="flex items-center gap-2 px-4 py-2 text-amber-600 hover:bg-amber-50">
-                    <i class="bi bi-filetype-json"></i>
-                    <span>Export Menu JSON</span>
+                <a href="{{ route('backend.clear-cache') }}"
+                   onclick="this.querySelector('i').classList.add('animate-spin')"
+                   class="flex items-center gap-2 px-4 py-2 text-amber-600 hover:bg-amber-50 transition-colors">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <span>Clear cache</span>
                 </a>
 
-                <a href="{{ route('backend.role.json') }}" target="_blank" class="flex items-center gap-2 px-4 py-2 text-indigo-600 hover:bg-indigo-50">
+                {{-- <a href="{{ route('backend.role.json') }}" target="_blank" class="flex items-center gap-2 px-4 py-2 text-indigo-600 hover:bg-indigo-50">
                     <i class="bi bi-filetype-json"></i>
                     <span>Export Role JSON</span>
-                </a>
+                </a> --}}
 
                 <div class="border-t border-slate-100 my-1"></div>
 

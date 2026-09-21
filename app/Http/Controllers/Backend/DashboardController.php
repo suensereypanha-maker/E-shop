@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Services\MenuService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 class DashboardController extends Controller
 {
@@ -81,5 +82,37 @@ class DashboardController extends Controller
         ];
 
         return view('backend.dashboard', compact('menus', 'metrics', 'recentOrders'));
+    }
+
+    /**
+     * Clear application cache, views, routes, and config.
+     */
+    public function clearCache(Request $request)
+    {
+        try {
+            Artisan::call('optimize:clear');
+
+            $message = 'Application cache cleared successfully!';
+
+            if ($request->wantsJson() || $request->ajax()) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => $message,
+                ]);
+            }
+
+            return redirect()->back()->with('success', $message);
+        } catch (\Throwable $e) {
+            $errorMsg = 'Failed to clear cache: ' . $e->getMessage();
+
+            if ($request->wantsJson() || $request->ajax()) {
+                return response()->json([
+                    'status' => 'error',
+                    'message' => $errorMsg,
+                ], 500);
+            }
+
+            return redirect()->back()->with('error', $errorMsg);
+        }
     }
 }

@@ -16,6 +16,7 @@ Route::prefix('backend')->name('backend.')->group(function () {
 
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/clear-cache', [DashboardController::class, 'clearCache'])->name('clear-cache');
 
     Route::get('/menu/json', [MenuController::class, 'getJson'])->name('menu.json');
     Route::get('/menu/download', [MenuController::class, 'downloadJson'])->name('menu.download');
