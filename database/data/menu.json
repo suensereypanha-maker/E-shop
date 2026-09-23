@@ -559,7 +559,7 @@
                 "name": "Stock",
                 "icon": "bi-stack",
                 "sort": 1,
-                "route": "#inventory-stock",
+                "route": "backend.stocks.index",
                 "badge": null,
                 "translations": {
                     "en": {
@@ -577,7 +577,7 @@
                 "name": "Stock In",
                 "icon": "bi-box-arrow-in-down-left",
                 "sort": 2,
-                "route": "#inventory-stock-in",
+                "route": "backend.stock-ins.index",
                 "badge": null,
                 "translations": {
                     "en": {
@@ -595,7 +595,7 @@
                 "name": "Stock Out",
                 "icon": "bi-box-arrow-up-right",
                 "sort": 3,
-                "route": "#inventory-stock-out",
+                "route": "backend.stock-outs.index",
                 "badge": null,
                 "translations": {
                     "en": {
@@ -631,7 +631,7 @@
                 "name": "Adjustments",
                 "icon": "bi-sliders2",
                 "sort": 5,
-                "route": "#inventory-adjustments",
+                "route": "backend.stock-adjustments.index",
                 "badge": null,
                 "translations": {
                     "en": {

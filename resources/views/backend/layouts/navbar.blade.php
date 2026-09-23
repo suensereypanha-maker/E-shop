@@ -7,11 +7,7 @@
         </button>
 
         <div class="flex items-center gap-3">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span class="hidden sm:inline">Store:</span> Phnom Penh Main (Open)
-            </div>
-
+          
             <span class="hidden md:inline-block text-slate-300">|</span>
 
             <div class="hidden md:flex items-center gap-1.5 text-xs text-slate-600">
@@ -27,21 +23,7 @@
 
     <!-- Right: Quick Actions & Profile -->
     <div class="flex items-center gap-2.5 sm:gap-3">
-        <!-- Quick POS New Sale Button -->
-        {{-- <a href="#pos-new-sale"
-           class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-sm transition-all">
-            <i class="bi bi-plus-circle text-xs"></i>
-            <span>New Sale</span>
-        </a>
-
-        <!-- Quick Cash In -->
-        <a href="#pos-cash-in"
-           class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-xs font-medium shadow-2xs transition-colors">
-            <i class="bi bi-box-arrow-in-down text-emerald-600 text-xs"></i>
-            <span>Cash In</span>
-        </a> --}}
-
-        <!-- Notifications with Badge 3 -->
+   
         <div class="relative" x-data="{ open: false }">
             <button @click="open = !open"
                     class="relative p-2   hover:bg-slate-50 text-slate-600 hover:text-slate-900 transition-colors shadow-2xs">

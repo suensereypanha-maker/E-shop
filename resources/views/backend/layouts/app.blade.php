@@ -78,6 +78,33 @@
             font-weight: 600;
         }
 
+        /* Clean Length Selector for DataTables */
+        div.dataTables_wrapper div.dataTables_length {
+            float: left;
+            margin-left: 18px !important;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        div.dataTables_wrapper div.dataTables_length label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #475569;
+        }
+
+        div.dataTables_wrapper div.dataTables_length select {
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 6px !important;
+            padding: 4px 26px 4px 10px !important;
+            margin: 0 4px !important;
+            font-size: 13px !important;
+            font-weight: 500 !important;
+            color: #334155 !important;
+            background-color: #ffffff !important;
+        }
+
         /* Clean Pagination: No background, no border, numbers only */
         div.dataTables_wrapper div.dataTables_paginate .paginate_button,
         div.dataTables_wrapper div.dataTables_paginate .paginate_button.current,
@@ -100,6 +127,168 @@
         div.dataTables_wrapper div.dataTables_paginate .paginate_button:hover {
             color: #4f46e5 !important;
         }
+
+        /* Enforce simple, clean solid black bordered table style for all DataTables */
+        .table-black,
+        .table-black th,
+        .table-black td,
+        table.dataTable,
+        table.dataTable thead th,
+        table.dataTable thead td,
+        table.dataTable tbody td,
+        table.dataTable tfoot th,
+        table.dataTable tfoot td {
+            border: 1px solid #000000 !important;
+            border-collapse: collapse !important;
+        }
+
+        table.dataTable {
+            width: 100% !important;
+            border-collapse: collapse !important;
+            border: 1px solid #000000 !important;
+        }
+
+        table.dataTable thead th,
+        table.dataTable thead td {
+            text-align: left !important;
+            padding: 8px 12px !important;
+            font-weight: 700 !important;
+            font-size: 11px !important;
+            text-transform: uppercase !important;
+            color: #000000 !important;
+            border: 1px solid #000000 !important;
+            background-color: #f1f5f9 !important;
+        }
+
+        table.dataTable tbody td {
+            text-align: left !important;
+            vertical-align: middle !important;
+            padding: 8px 12px !important;
+            font-size: 12px !important;
+            border: 1px solid #000000 !important;
+            background-color: #ffffff !important;
+        }
+
+        table.dataTable tbody tr:hover,
+        table.dataTable.hover tbody tr:hover,
+        table.dataTable.display tbody tr:hover {
+            background-color: #f8fafc !important;
+        }
+
+        table.dataTable tfoot th,
+        table.dataTable tfoot td {
+            text-align: left !important;
+            padding: 8px 12px !important;
+            font-weight: 700 !important;
+            font-size: 11px !important;
+            color: #000000 !important;
+            border: 1px solid #000000 !important;
+            background-color: #f1f5f9 !important;
+        }
+
+        /* Global Print Rules: ensure full pagination across all pages without scrollbar clipping */
+        @media print {
+            @page {
+                size: auto;
+                margin: 0mm;
+            }
+
+            html,
+            body {
+                height: auto !important;
+                min-height: 100% !important;
+                overflow: visible !important;
+                background: #ffffff !important;
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .no-print,
+            header,
+            aside,
+            nav,
+            footer {
+                display: none !important;
+            }
+
+            .h-screen,
+            .min-h-screen {
+                height: auto !important;
+                min-height: auto !important;
+            }
+
+            .overflow-hidden,
+            .overflow-y-auto,
+            .overflow-x-auto,
+            .overflow-x-hidden {
+                overflow: visible !important;
+                height: auto !important;
+                max-height: none !important;
+            }
+
+            .w-0 {
+                width: 100% !important;
+            }
+
+            .flex-1 {
+                flex: none !important;
+                width: 100% !important;
+            }
+
+            main {
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                overflow: visible !important;
+                height: auto !important;
+                background: transparent !important;
+            }
+
+            table.dataTable,
+            table.dataTable * {
+                border-collapse: collapse !important;
+            }
+
+            table.dataTable {
+                border-collapse: collapse !important;
+                width: 100% !important;
+                border: 1px solid #000000 !important;
+            }
+
+            table.dataTable th,
+            table.dataTable td,
+            table.dataTable thead th,
+            table.dataTable thead td,
+            table.dataTable tbody td,
+            table.dataTable tbody tr:first-child td {
+                border: 1px solid #000000 !important;
+                border-top: 1px solid #000000 !important;
+                border-bottom: 1px solid #000000 !important;
+                border-left: 1px solid #000000 !important;
+                border-right: 1px solid #000000 !important;
+                padding: 6px 8px !important;
+                color: #000000 !important;
+            }
+
+            table.dataTable thead th {
+                background-color: #f1f5f9 !important;
+                font-weight: 700 !important;
+                color: #000000 !important;
+                border: 1px solid #000000 !important;
+            }
+
+            .dt-buttons,
+            .dataTables_filter,
+            .dataTables_length,
+            .dataTables_paginate,
+            .dataTables_info,
+            button {
+                display: none !important;
+            }
+        }
     </style>
     @stack('styles')
 </head>
@@ -117,29 +306,6 @@
               this.openMenus[id] = !this.openMenus[id];
           }
       }">
-
-    <!-- Global Floating Toast Notification -->
-    @if (session('success') || session('error'))
-        <div x-data="{ show: true }"
-             x-show="show"
-             x-init="setTimeout(() => show = false, 4000)"
-             x-transition:enter="transition ease-out duration-300 transform"
-             x-transition:enter-start="opacity-0 translate-y-[-12px]"
-             x-transition:enter-end="opacity-100 translate-y-0"
-             x-transition:leave="transition ease-in duration-200 transform"
-             x-transition:leave-start="opacity-100 translate-y-0"
-             x-transition:leave-end="opacity-0 translate-y-[-12px]"
-             class="fixed top-5 right-5 z-[9999] max-w-sm w-full p-3.5 rounded-xl shadow-xl border flex items-center justify-between gap-3 backdrop-blur-md {{ session('error') ? 'bg-rose-50/95 border-rose-200 text-rose-800' : 'bg-emerald-50/95 border-emerald-200 text-emerald-800' }}"
-             style="display: none;">
-            <div class="flex items-center gap-2.5">
-                <i class="bi {{ session('error') ? 'bi-exclamation-circle-fill text-rose-600' : 'bi-check-circle-fill text-emerald-600' }} text-base"></i>
-                <span class="text-xs font-semibold">{{ session('success') ?? session('error') }}</span>
-            </div>
-            <button type="button" @click="show = false" class="text-slate-400 hover:text-slate-600">
-                <i class="bi bi-x-lg text-xs"></i>
-            </button>
-        </div>
-    @endif
 
     <div class="flex h-screen overflow-hidden bg-slate-50">
 

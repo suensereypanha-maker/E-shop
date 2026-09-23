@@ -18,7 +18,7 @@ class CategoryDataTable extends DataTable
                 if ($category->image && file_exists(public_path($category->image))) {
                     return '<img src="' . asset($category->image) . '" alt="' . e($category->name) . '" class="w-10 h-10 object-cover rounded border border-slate-200 p-0.5 bg-white shadow-2xs">';
                 }
-                return '<div class="w-10 h-10 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-400 text-xs font-semibold">' . strtoupper(substr($category->name, 0, 2)) . '</div>';
+                return '<span class="text-xs text-slate-400 italic">N/A</span>';
             })
             ->addColumn('parent', function (Category $category) {
                 if ($category->parent) {

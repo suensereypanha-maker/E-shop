@@ -9,6 +9,11 @@ use App\Http\Controllers\Backend\ColorController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SupplierController;
+use App\Http\Controllers\Backend\StockInController;
+use App\Http\Controllers\Backend\StockOutController;
+use App\Http\Controllers\Backend\StockAdjustmentController;
+use App\Http\Controllers\Backend\StockController;
+use App\Http\Controllers\Backend\ProductController;
 
 
 
@@ -52,6 +57,33 @@ Route::prefix('backend')->name('backend.')->group(function () {
     Route::post('/suppliers', [SupplierController::class, 'store'])->name('suppliers.store');
     Route::put('/suppliers/{supplier}', [SupplierController::class, 'update'])->name('suppliers.update');
     Route::delete('/suppliers/{supplier}', [SupplierController::class, 'destroy'])->name('suppliers.destroy');
+
+    // Catalog - Products
+    Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+
+    // Inventory - Master Stock Hub & Movements
+    Route::get('/stocks', [StockController::class, 'index'])->name('stocks.index');
+    Route::get('/stocks/movements', [StockController::class, 'movements'])->name('stocks.movements');
+    Route::get('/stocks/{variation}/history', [StockController::class, 'history'])->name('stocks.history');
+
+    // Inventory - Stock In
+    Route::get('/stock-ins', [StockInController::class, 'index'])->name('stock-ins.index');
+    Route::get('/stock-ins/create', [StockInController::class, 'create'])->name('stock-ins.create');
+    Route::post('/stock-ins', [StockInController::class, 'store'])->name('stock-ins.store');
+    Route::get('/stock-ins/{stockIn}', [StockInController::class, 'show'])->name('stock-ins.show');
+    Route::post('/stock-ins/{stockIn}/cancel', [StockInController::class, 'cancel'])->name('stock-ins.cancel');
+    Route::get('/api/products/{product}/variations', [StockInController::class, 'getProductVariations'])->name('stock-ins.product-variations');
+
+    // Inventory - Stock Out
+    Route::get('/stock-outs', [StockOutController::class, 'index'])->name('stock-outs.index');
+    Route::post('/stock-outs', [StockOutController::class, 'store'])->name('stock-outs.store');
+    Route::get('/stock-outs/{stockOut}', [StockOutController::class, 'show'])->name('stock-outs.show');
+    Route::post('/stock-outs/{stockOut}/cancel', [StockOutController::class, 'cancel'])->name('stock-outs.cancel');
+
+    // Inventory - Stock Adjustments
+    Route::get('/stock-adjustments', [StockAdjustmentController::class, 'index'])->name('stock-adjustments.index');
+    Route::post('/stock-adjustments', [StockAdjustmentController::class, 'store'])->name('stock-adjustments.store');
+    Route::get('/stock-adjustments/{stockAdjustment}', [StockAdjustmentController::class, 'show'])->name('stock-adjustments.show');
 
     Route::get('/registered-customers', [ModulePlaceholderController::class, 'show'])->defaults('module', 'registered-customers')->name('registered-customers.index');
 

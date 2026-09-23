@@ -18,7 +18,7 @@ class BrandDataTable extends DataTable
                 if ($brand->logo && file_exists(public_path($brand->logo))) {
                     return '<img src="' . asset($brand->logo) . '" alt="' . e($brand->name) . '" class="w-10 h-10 object-contain rounded border border-slate-200 p-0.5 bg-white shadow-2xs">';
                 }
-                return '<div class="w-10 h-10 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-400 text-xs font-semibold">' . strtoupper(substr($brand->name, 0, 2)) . '</div>';
+                return '<span class="text-xs text-slate-400 italic">N/A</span>';
             })
             ->editColumn('status', function (Brands $brand) {
                 if ($brand->status) {
